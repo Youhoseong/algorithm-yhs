@@ -28,14 +28,14 @@ int check(vector<int> &dirs) {
 
     // 0: down 1: up 2:left 3:right
 
-    for(int dir: dirs) {
+    for(int dir : dirs) {
         bool ok = false;
         for(int i=0; i<n; i++){ // second init
             for(int j=0; j<n; j++)
                 d[i][j].second = false;
 
         }
-
+//memo
         while(true) {
             ok =false;
             if(dir ==0) {//down
@@ -157,7 +157,6 @@ int check(vector<int> &dirs) {
 
 
 int main() {
-    cout << "enter N:";
     cin >> N;
     for(int i=0; i<N; i++){
         for(int j=0; j<N; j++)
