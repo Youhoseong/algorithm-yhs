@@ -25,7 +25,7 @@ void BFS() {
 
       if (cur == K) {
          cout << time << endl;
-         for (int i = cur; i != N; i = parentRecord[i]) {
+         for (int i = cur; i != N; i = parentRecord[i]) { 
             record.push_back(i);
          }
          record.push_back(N);
