@@ -3,20 +3,17 @@ N, M = input().split()
 N = int(N)
 M = int(M)
 
-tmep = []
+a = set()
 for i in range(N):
-    temp = input()
-    tmep.append(temp)
+    a.add(input())
 
-print(tmep)
 
-tt = []
+b = set()
 for i in range(M):
-    temp = input()
-    if temp in tmep:
-        tt.append(temp)
+    b.add(input())
 
+r = sorted(list(a & b))
 
-print(len(tt))
-for i in tt:
+print(len(r))
+for i in r:
     print(i)
