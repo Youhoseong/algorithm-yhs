@@ -6,7 +6,7 @@ using namespace std;
 int main() {
 
 
-    while(1) {
+    while(1) { 
         stack<char> s;
         string temp;
 //        cout << "대기: ";
