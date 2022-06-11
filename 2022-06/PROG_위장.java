@@ -1,5 +1,4 @@
 import java.util.*;
-import java.util.stream.*;
 
 class Solution {
     private Map<String, Integer> clothMap = new HashMap<>();
